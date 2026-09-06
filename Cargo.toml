@@ -1,0 +1,13 @@
+[package]
+name = "adaptive-bot"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+arena-client-sdk = { path = "../server/crates/arena-client-sdk" }
+arena-core = { path = "../server/crates/arena-core" }
+blake3 = "1.8.7"
+
+[profile.release]
+lto = "thin"
